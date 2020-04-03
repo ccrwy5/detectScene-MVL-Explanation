@@ -34,7 +34,7 @@
       
 ---
 #### Additional Notes
-An activity indicator is created on 19 and is simply called `activity indicator`.   
+An activity indicator is created on line 19 and is simply called `activityIndicator`.   
 ```Swift
 @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 ```
