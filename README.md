@@ -30,7 +30,16 @@
       ```Swift
       try handler.perform([request])
       ```
-and begin the actual detection of the scene, thus, will attempt to execute the for-loop and output that we see on the screen when the application is running. The ``` perform``` method is protected via a do/catch block, with appropriate error descriptions provided for the user. 
+      and begin the actual detection of the scene, thus, will attempt to execute the for-loop and output that we see on the screen when the application is running. The ``` perform``` method is protected via a do/catch block, with appropriate error descriptions provided for the user.   
+      
+---
+#### Additional Notes
+An activity indicator is created on 19 and is simply called `activity indicator`.   
+```Swift
+@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+```
+The activity indictor is displayed on screen in the form of a spinning loading-type circle. It is accessed multiple times within `detectScene` to either `startAnimating()` or `stopAnimating()`, as it pretains to the execution of the request and loading of the results.
+
     
       
       
